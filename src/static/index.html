@@ -22,8 +22,26 @@
       </section>
 
       <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
+        <h3>Teacher access</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="teacher-username">Username:</label>
+            <input type="text" id="teacher-username" required autocomplete="username" />
+          </div>
+          <div class="form-group">
+            <label for="teacher-password">Password:</label>
+            <input type="password" id="teacher-password" required autocomplete="current-password" />
+          </div>
+          <button type="submit">Sign in</button>
+        </form>
+        <div id="teacher-session" class="hidden">
+          <span>Signed in as <strong id="teacher-name"></strong></span>
+          <button type="button" id="logout-button">Sign out</button>
+        </div>
+        <div id="message" class="hidden" role="status" aria-live="polite"></div>
+
+        <h3 id="signup-heading" class="hidden">Sign Up for an Activity</h3>
+        <form id="signup-form" class="hidden">
           <div class="form-group">
             <label for="email">Student Email:</label>
             <input type="email" id="email" required placeholder="your-email@mergington.edu" />
@@ -37,7 +55,6 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
-        <div id="message" class="hidden"></div>
       </section>
     </main>
 
