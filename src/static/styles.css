@@ -192,6 +192,19 @@ button:hover {
   display: none;
 }
 
+#teacher-session:not(.hidden) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+#teacher-session button,
+.delete-btn {
+  width: auto;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
